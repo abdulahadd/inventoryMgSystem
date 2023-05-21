@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "project web",
+  "main": "main.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron": "electron .",
+    "electron-build": "ng build  --prod && electron ."
+  },
+  "author": "Abdul Ahad, Fatima Ahmed, Huda Ali, Fatima Abid",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "datejs": "^1.0.0-rc3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.0",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "8.11.3"
+  },
+  "repository": {},
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "license": "MIT"
+}

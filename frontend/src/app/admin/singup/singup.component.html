@@ -1,0 +1,82 @@
+
+    <div class="row">
+      <div class="col-sm-5 offset-sm-4 mt-3">
+       
+
+        <div class="card ml-5" style="background:  rgba(41, 38, 189, 0.2); border-radius: 50px">
+          <div class="card-body">
+            <form (ngSubmit)="onSignup(signedupForm)" #signedupForm="ngForm">
+              <div class="form-group">
+                <label style="color:black" for="exampleInputname"><b>Username</b></label>
+                <input type="text" name="username" class="form-control" id="exampleInputtext"
+                  aria-describedby="textHelp" placeholder="Enter Username" ngModel username required>
+                <small id="emailHelp" style="color:black" class="form-text">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <div class="form-group">
+                <label style="color:black" for="exampleInputEmail1"><b>Email address</b></label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="Enter email" ngModel email required>
+                <small id="emailHelp" style="color:black" class="form-text">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <div class="form-group">
+                <label style="color: black;" for="exampleInputPassword1"><b>Password</b></label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1"
+                  placeholder="Enter Password" ngModel required>
+              </div>
+
+              <div class="form-group">
+                <label style="color: black;" for="exampleInputPassword1"><b>Confirm Password</b></label>
+                <input type="password" name="confirmPassword" class="form-control" id="exampleInputPassword2"
+                  placeholder="Enter Confirm Password" ngModel required>
+              </div>
+<!-- 
+              <div class="form-group  ">
+             <label style="color: black;" ><b>Branch Number:      </b></label>
+                
+              <input list="browsers" name="bn" placeholder="Enter Branch Number" class="form-control "  ngModel required>
+                <datalist id="browsers">
+                  <option value="none">
+                  
+                </datalist>
+               <div>
+               <label style="color: black;" for="exampleInputPassword1">For Admin select none</label>
+              </div>
+              </div> -->
+              <!-- <div class="form-group">
+                <label style="color: black;" for="exampleInputPassword1"><b>Branch Number</b></label>
+                <input type="text" name="bn" class="form-control" id="branchnumber"
+                  placeholder="Enter branch number" ngModel required>
+              </div> -->
+              <!-- <div class="row">
+                <div class="col-sm-6 ml-5 form-group  form-check">
+                  <input type="radio" name="usertype" class="form-check-input" value='admin' id="exampleCheck1" ngModel required>
+                  <label class="form-check-label" style="color:black" for="exampleCheck1"><b>Admin</b></label>
+                </div>
+
+                <div class="col-sm-4 form-group form-check">
+                  <input type="radio" name="usertype" class="form-check-input" value='employee' id="exampleCheck2" ngModel required>
+                  <label class="form-check-label" style="color:black" for="exampleCheck1"><b>Employee</b></label>
+                </div>
+              </div> -->
+              <div class="radio row text-dark">
+                <div class="col-sm-6">
+                  <input type="radio" name="usertype" value="Admin" checked ngModel required>
+                  <label>&nbsp; Admin</label>
+                </div>
+
+                <div class="col-sm-6">
+                  <input type="radio" name="usertype" value="Employee" ngModel required>
+                  <label>&nbsp; Employee</label>
+                </div>
+
+              </div>
+
+              <button type="submit" class="offset-sm-2 ml-4 btn btn-primary">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
